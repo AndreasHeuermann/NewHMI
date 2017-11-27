@@ -301,7 +301,6 @@
         "displayName",
         "visible",
         "description",
-        "defaultValue",
         "defaultValueInternal"
       ]
     },
@@ -1646,97 +1645,183 @@
     "DGColumnDefinitionList": {
       "$schema": "http://json-schema.org/draft-04/schema",
       "title": "DGColumnDefinitionList",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "minLength": 1
-          },
-          "label": {
-            "type": "string"
-          },
-          "control": {
-            "type": "string",
-            "enum": [
-              "TextBox",
-              "TextBlock",
-              "CheckBox",
-              "Image",
-              "ComboBox"
-            ]
-          },
-          "width": {
-            "type": "number",
-            "minimum": 0
-          },
-          "widthUnit": {
-            "$ref": "tchmi:framework#/definitions/MeasurementUnit"
-          },
-          "resize": {
-            "type": "boolean"
-          },
-          "minWidth": {
-            "type": "number",
-            "minimum": 0
-          },
-          "minWidthUnit": {
-            "$ref": "tchmi:framework#/definitions/MeasurementUnit"
-          },
-          "cellBackground": {
-            "oneOf": [
-              {
-                "$ref": "tchmi:framework#/definitions/SolidColor"
+      "anyOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1
               },
-              {
-                "$ref": "tchmi:framework#/definitions/LinearGradientColor"
+              "label": {
+                "type": "string"
               },
-              {
-                "type": "null"
+              "control": {
+                "type": "string",
+                "enum": [
+                  "TextBox",
+                  "TextBlock",
+                  "CheckBox",
+                  "Image",
+                  "ComboBox"
+                ]
+              },
+              "width": {
+                "type": "number",
+                "minimum": 0
+              },
+              "widthUnit": {
+                "$ref": "tchmi:framework#/definitions/MeasurementUnit"
+              },
+              "resize": {
+                "type": "boolean"
+              },
+              "minWidth": {
+                "type": "number",
+                "minimum": 0
+              },
+              "minWidthUnit": {
+                "$ref": "tchmi:framework#/definitions/MeasurementUnit"
+              },
+              "cellBackground": {
+                "oneOf": [
+                  {
+                    "$ref": "tchmi:framework#/definitions/SolidColor"
+                  },
+                  {
+                    "$ref": "tchmi:framework#/definitions/LinearGradientColor"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "textColor": {
+                "oneOf": [
+                  {
+                    "$ref": "tchmi:framework#/definitions/SolidColor"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "editable": {
+                "type": "boolean"
+              },
+              "horizontalAlignment": {
+                "$ref": "tchmi:framework#/definitions/HorizontalAlignment"
+              },
+              "verticalAlignment": {
+                "$ref": "tchmi:framework#/definitions/VerticalAlignment"
+              },
+              "dataDefinitions": {
+                "$ref": "tchmi:framework#/definitions/DGDataDefinitionList"
+              },
+              "format": {
+                "$ref": "tchmi:framework#/definitions/Function"
               }
+            },
+            "required": [
+              "name",
+              "label",
+              "control",
+              "width",
+              "widthUnit",
+              "resize",
+              "minWidth",
+              "minWidthUnit",
+              "editable",
+              "horizontalAlignment",
+              "verticalAlignment"
             ]
-          },
-          "textColor": {
-            "oneOf": [
-              {
-                "$ref": "tchmi:framework#/definitions/SolidColor"
-              },
-              {
-                "type": "null"
-              }
-            ]
-          },
-          "editable": {
-            "type": "boolean"
-          },
-          "horizontalAlignment": {
-            "$ref": "tchmi:framework#/definitions/HorizontalAlignment"
-          },
-          "verticalAlignment": {
-            "$ref": "tchmi:framework#/definitions/VerticalAlignment"
-          },
-          "dataDefinitions": {
-            "$ref": "tchmi:framework#/definitions/DGDataDefinitionList"
-          },
-          "format": {
-            "$ref": "tchmi:framework#/definitions/Function"
           }
         },
-        "required": [
-          "name",
-          "label",
-          "control",
-          "width",
-          "widthUnit",
-          "resize",
-          "minWidth",
-          "minWidthUnit",
-          "editable",
-          "horizontalAlignment",
-          "verticalAlignment"
-        ]
-      }
+        {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "control": {
+              "type": "string",
+              "enum": [
+                "TextBox",
+                "TextBlock",
+                "CheckBox",
+                "Image",
+                "ComboBox"
+              ]
+            },
+            "width": {
+              "type": "number",
+              "minimum": 0
+            },
+            "widthUnit": {
+              "$ref": "tchmi:framework#/definitions/MeasurementUnit"
+            },
+            "resize": {
+              "type": "boolean"
+            },
+            "minWidth": {
+              "type": "number",
+              "minimum": 0
+            },
+            "minWidthUnit": {
+              "$ref": "tchmi:framework#/definitions/MeasurementUnit"
+            },
+            "cellBackground": {
+              "oneOf": [
+                {
+                  "$ref": "tchmi:framework#/definitions/SolidColor"
+                },
+                {
+                  "$ref": "tchmi:framework#/definitions/LinearGradientColor"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "textColor": {
+              "oneOf": [
+                {
+                  "$ref": "tchmi:framework#/definitions/SolidColor"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "editable": {
+              "type": "boolean"
+            },
+            "horizontalAlignment": {
+              "$ref": "tchmi:framework#/definitions/HorizontalAlignment"
+            },
+            "verticalAlignment": {
+              "$ref": "tchmi:framework#/definitions/VerticalAlignment"
+            },
+            "format": {
+              "$ref": "tchmi:framework#/definitions/Function"
+            }
+          },
+          "required": [
+            "label",
+            "control",
+            "width",
+            "widthUnit",
+            "resize",
+            "minWidth",
+            "minWidthUnit",
+            "editable",
+            "horizontalAlignment",
+            "verticalAlignment"
+          ]
+        }
+      ]
     },
     "DGDataDefinitionList": {
       "oneOf": [

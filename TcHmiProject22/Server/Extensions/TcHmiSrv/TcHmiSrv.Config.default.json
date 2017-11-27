@@ -1887,6 +1887,6 @@
     "VIDEOSEGMENTSIZE": 1048576,
     "VIRTUALDIRECTORIES": {
         "/": "..\\..\\TcHmiProject22",
-        "/framework": "..\\..\\..\\..\\..\\..\\..\\TwinCAT\\Functions\\TE2000-HMI-Engineering\\Infrastructure\\TcHmiFramework\\1.0.737.0"
+        "/framework": "..\\..\\..\\..\\..\\..\\..\\TwinCAT\\Functions\\TE2000-HMI-Engineering\\Infrastructure\\TcHmiFramework\\1.0.861.0"
     }
 }
