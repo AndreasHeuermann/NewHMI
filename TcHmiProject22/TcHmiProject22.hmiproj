@@ -147,6 +147,9 @@
     <Content Include="Server\Extensions\TcHmiSqliteLogger\TcHmiSqliteLogger.Config.default.json">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Server\Extensions\TcHmiSqliteLogger\TcHmiSqliteLogger.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Server\Extensions\TcHmiSqliteLogger\TcHmiSqliteLogger.Storage.json">
       <SubType>Content</SubType>
     </Content>
