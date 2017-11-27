@@ -8,7 +8,13 @@
     "eventFilter": null
   },
   "userControls": [],
-  "content": [],
+  "content": [
+    {
+      "url": "Content1.content",
+      "preload": false,
+      "precompile": false
+    }
+  ],
   "views": [
     {
       "url": "Desktop.view",

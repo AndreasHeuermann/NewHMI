@@ -117,6 +117,9 @@
       <SubType>Content</SubType>
       <Visible>true</Visible>
     </Content>
+    <Content Include="Content1.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Server\Extensions\ADS\ADS.Config.default.json">
       <SubType>Content</SubType>
     </Content>
