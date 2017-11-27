@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FE7A1B72-C5B7-4D7C-BB7D-76384D4DE8E1}") = "TcHmiProject22", "TcHmiProject22\TcHmiProject22.hmiproj", "{C8CFE59C-4E59-4736-A5ED-6A2E970C33D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|TwinCAT HMI = Debug|TwinCAT HMI
+		Release|TwinCAT HMI = Release|TwinCAT HMI
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8CFE59C-4E59-4736-A5ED-6A2E970C33D8}.Debug|TwinCAT HMI.ActiveCfg = Debug|TwinCAT HMI
+		{C8CFE59C-4E59-4736-A5ED-6A2E970C33D8}.Debug|TwinCAT HMI.Build.0 = Debug|TwinCAT HMI
+		{C8CFE59C-4E59-4736-A5ED-6A2E970C33D8}.Release|TwinCAT HMI.ActiveCfg = Release|TwinCAT HMI
+		{C8CFE59C-4E59-4736-A5ED-6A2E970C33D8}.Release|TwinCAT HMI.Build.0 = Release|TwinCAT HMI
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
